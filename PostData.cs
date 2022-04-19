@@ -58,7 +58,7 @@ namespace _19042022
                 cmd.ExecuteNonQuery();
             }
         }
-        public Post GetPostById(string id)
+        public Post GetPostById(int id)
         {
             Post post = new Post();
             using (SqlConnection con = new SqlConnection(Sql.ConnectionString))
@@ -88,7 +88,7 @@ namespace _19042022
                 }
             }
         }
-        public void EditPostTitle(string id)
+        public void EditPostTitle(int id)
         {
             
             using (SqlConnection con = new SqlConnection(Sql.ConnectionString))
